@@ -1,0 +1,432 @@
+- model: tools.section
+  pk: 1
+  fields:
+    name: Digital Fabrication
+    trainers: []
+- model: tools.section
+  pk: 2
+  fields:
+    name: Electronics
+    trainers: [] # Howard Eglowstein
+- model: tools.section
+  pk: 3
+  fields:
+    name: Jewelry
+    trainers: [] # Jeanne Applegate
+- model: tools.section
+  pk: 4
+  fields:
+    name: Laser Cutting
+    trainers: [] # Sarah Gingras
+- model: tools.section
+  pk: 5
+  fields:
+    name: Metal
+    trainers: [] # Eric Saggerer
+- model: tools.section
+  pk: 6
+  fields:
+    name: Textiles
+    trainers: [] # Leeni Gravlin-Dunn
+- model: tools.section
+  pk: 7
+  fields:
+    name: Welding
+    trainers: [] # Dan Guillou
+- model: tools.section
+  pk: 7
+  fields:
+    name: Woodworking
+    trainers: [] # Paul Tuller
+- model: tools.section
+  pk: 8
+  fields:
+    name: Audio/Video
+    trainers: []
+
+############################################
+- model: tools.Brand
+  pk: 1
+  fields:
+    name: Delta
+- model: tools.Brand
+  pk: 2
+  fields:
+    name: DeWalt
+- model: tools.Brand
+  pk: 3
+  fields:
+    name: Rockwell
+- model: tools.Brand
+  pk: 4
+  fields:
+    name: Central Machinery
+- model: tools.Brand
+  pk: 5
+  fields:
+    name: Saw Stop
+- model: tools.Brand
+  pk: 6
+  fields:
+    name: Rigid
+- model: tools.Brand
+  pk: 7
+  fields:
+    name: Pioneer
+- model: tools.Brand
+  pk: 8
+  fields:
+    name: Open Builds
+- model: tools.Brand
+  pk: 9
+  fields:
+    name: Ryobi
+
+- model: tools.Brand
+  pk: 10
+  fields:
+    name: Singer
+- model: tools.Brand
+  pk: 11
+  fields:
+    name: Kenmore
+
+- model: tools.Brand
+  pk: 12
+  fields:
+    name: Flashforge
+- model: tools.Brand
+  pk: 13
+  fields:
+    name: SeeMeCNC
+- model: tools.Brand
+  pk: 14
+  fields:
+    name: Sillouette
+- model: tools.Brand
+  pk: 15
+  fields:
+    name: Epilog
+
+- model: tools.Brand
+  pk: 16
+  fields:
+    name: Lincoln Electric
+- model: tools.Brand
+  pk: 17
+  fields:
+    name: Clarke Weld
+- model: tools.Brand
+  pk: 18
+  fields:
+    name: Chicago Electric
+
+- model: tools.Brand
+  pk: 19
+  fields:
+    name: Grizzly
+- model: tools.Brand
+  pk: 20
+  fields:
+    name: ToolKraft
+
+- model: tools.Brand
+  pk: 21
+  fields:
+    name: Tektronix
+- model: tools.Brand
+  pk: 22
+  fields:
+    name: KRM
+- model: tools.Brand
+  pk: 23
+  fields:
+    name: Xytronic
+- model: tools.Brand
+  pk: 24
+  fields:
+    name: Tenma
+- model: tools.Brand
+  pk: 25
+  fields:
+    name: Fluke
+
+- model: tools.Brand
+  pk: 26
+  fields:
+    name: Canon
+- model: tools.Brand
+  pk: 27
+  fields:
+    name: Nikon
+- model: tools.Brand
+  pk: 28
+  fields:
+    name: Panasonic
+
+############################################
+- model: tools.tool
+  pk: 1
+  fields:
+    brand: 2
+    name: Miter Saw
+    section: 7
+- model: tools.tool
+  pk: 2
+  fields:
+    brand: 1
+    name: 17" Band Saw
+    section: 7
+- model: tools.tool
+  pk: 3
+  fields:
+    name: 4 speed Lathe
+    brand: 3
+    section: 7
+- model: tools.tool
+  pk: 4
+  fields:
+    name: 16 Speed floor Drill Press
+    brand: 4
+    section: 7
+- model: tools.tool
+  pk: 5
+  fields:
+    name: 3hp cabinet Table Saw
+    brand: 5
+    section: 7
+- model: tools.tool
+  pk: 6
+  fields:
+    name: 12" Planer
+    brand: 6
+    section: 7
+- model: tools.tool
+  pk: 7
+  fields:
+    name: 6" benchtop Jointer
+    brand: 7
+    section: 7
+- model: tools.tool
+  pk: 8
+  fields:
+    name: OX 4'x2' CNC Router
+    brand: 8
+    section: 7
+- model: tools.tool
+  pk: 9
+  fields:
+    name: Belt and Disk Sander
+    brand: 9
+    section: 7
+- model: tools.tool
+  pk: 10
+  fields:
+    name: Scroll Saw
+    brand: 1
+    section: 7
+- model: tools.tool
+  pk: 11
+  fields:
+    name: Hand Router
+    brand: 2
+    section: 7
+- model: tools.tool
+  pk: 12
+  fields:
+    name: Circular Saw
+    brand: 2
+    section: 7
+- model: tools.tool
+  pk: 13
+  fields:
+    name: Electric hand planer
+    section: 7
+
+
+- model: tools.tool
+  pk: 14
+  fields:
+    name: Screen Printer
+    section: 6
+- model: tools.tool
+  pk: 15
+  fields:
+    name: Exposure Unit
+    section: 6
+- model: tools.tool
+  pk: 16
+  fields:
+    brand: 10
+    name: Sewing Machine
+    section: 6
+- model: tools.tool
+  pk: 17
+  fields:
+    brand: 11
+    name: Sewing Machine
+    section: 6
+- model: tools.tool
+  pk: 18
+  fields:
+    brand: 10
+    name: Serger
+    section: 6
+- model: tools.tool
+  pk: 19
+  fields:
+    name: Loom
+    section: 6
+- model: tools.tool
+  pk: 20
+  fields:
+    name: Industrial Sewing Machines
+    section: 6
+
+- model: tools.tool
+  pk: 21
+  fields:
+    brand: 12
+    name: 3d printer
+    section: 1
+- model: tools.tool
+  pk: 22
+  fields:
+    brand: 13
+    name: Rostock MAX (3d printer)
+    section: 1
+- model: tools.tool
+  pk: 23
+  fields:
+    brand: 14
+    name: Cameo
+    section: 1
+- model: tools.tool
+  pk: 24
+  fields:
+    brand: 15
+    name: Zing 30W
+    section: 1
+
+- model: tools.tool
+  pk: 25
+  fields:
+    name: Kiln
+    section: 3
+- model: tools.tool
+  pk: 26
+  fields:
+    name: Laminar Flow Hoods
+    section: 3
+
+- model: tools.tool
+  pk: 27
+  fields:
+    brand: 16
+    name: TIG welder
+    section: 7
+- model: tools.tool
+  pk: 28
+  fields:
+    brand: 16
+    name: MIG/TIG welder
+    section: 7
+- model: tools.tool
+  pk: 29
+  fields:
+    brand: 17
+    name: MIG welder
+    section: 7
+- model: tools.tool
+  pk: 30
+  fields:
+    brand: 18
+    name: Plasma Cutter
+    section: 7
+
+- model: tools.tool
+  pk: 31
+  fields:
+    brand: 19
+    name: G4000 (small lathe)
+    section: 5
+- model: tools.tool
+  pk: 32
+  fields:
+    name: ZX45 (benchtop mill)
+    section: 5
+- model: tools.tool
+  pk: 33
+  fields:
+    brand: 1
+    name: Bench grinder
+    section: 5
+- model: tools.tool
+  pk: 34
+  fields:
+    brand: 1
+    name: Bench grinder
+    section: 5
+- model: tools.tool
+  pk: 35
+  fields:
+    brand: 20
+    name: Drill Press
+    section: 5
+
+- model: tools.tool
+  pk: 36
+  fields:
+    brand: 21
+    name: Digital Oscilloscope
+    section: 2
+- model: tools.tool
+  pk: 37
+  fields:
+    brand: 22
+    name: DC Power Supply
+    section: 2
+- model: tools.tool
+  pk: 38
+  fields:
+    brand: 23
+    name: Multi-Function SMD Rework System
+    section: 2
+- model: tools.tool
+  pk: 39
+  fields:
+    brand: 24
+    name: Soldering/SMD Rework Station
+    section: 2
+- model: tools.tool
+  pk: 40
+  fields:
+    brand: 25
+    name: Multimeter
+    section: 2
+- model: tools.tool
+  pk: 41
+  fields:
+    brand: 23
+    name: Fume Extractor
+    section: 2
+
+- model: tools.tool
+  pk: 42
+  fields:
+    brand: 26
+    name: Vixia Digital Video Camera
+    section: 8
+- model: tools.tool
+  pk: 43
+  fields:
+    brand: 27
+    name: D80 Digital Camera
+    section: 8
+- model: tools.tool
+  pk: 44
+  fields:
+    brand: 28
+    name: Mini DV Video Camera
+    section: 8
+
