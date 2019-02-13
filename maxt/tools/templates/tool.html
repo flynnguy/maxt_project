@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+{% block title %}<title>This is the page for {{ tool }}</title>{% endblock %}
+
+{% block content %}
+<p>
+{% if tool.wiki_link %}<a href="{{ tool.wiki_link }}">{{ tool }}</a>{% else %}{{ tool }}{% endif %}<br /><br />
+
+This tool is found in the {{ tool.section }} section.
+</p>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>This is the page for member {{ member }}</h1>
+
+<p>
+This member is authorized to use the following tools:
+<ul>
+{% for tool in member.authorized_tools.all %}
+<li><a href="{% url 'tool' tool.id %}">{{ tool }}</a></li>
+{% endfor %}
+</ul>
+</p>
+{% endblock content %}

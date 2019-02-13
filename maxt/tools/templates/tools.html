@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block title%}<title>This is the list of tools</title>{% endblock title %}
+
+
+{% block content %}
+<p>
+The following is a list of all tools at the makerspace:
+<ul>
+{% for tool in tools %}
+<li><a href="{% url 'tool' tool.id %}">{{ tool }}</a></li>
+{% endfor %}
+</ul>
+</p>
+{% endblock content %}
