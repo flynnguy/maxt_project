@@ -6,7 +6,7 @@
 	<body>
 		<link rel="stylesheet" href="{% static "css/main.css" %}">
 		<div class="topnav">
-			<a class="active" href="/">Home</a>
+            <a class="active" href="/">Home</a>
 			{% if user.is_authenticated %}<a href="{% url 'userinfo' user.username %}">Profile</a>{% endif %}
 			<a href="/tools">Tools</a>
 			{% if perms.tools.add_tool %}<a href="/admin">Admin</a>{% endif %}

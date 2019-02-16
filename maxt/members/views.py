@@ -15,7 +15,6 @@ def rfid_csv(request):
     response['Content-Disposition'] = 'attachment; filename="rfid.csv"'
 
     writer = csv.writer(response)
-    writer.writerow(['First row'])
     for member in members:
         if member.user.is_active:
             writer.writerow([member.user.username])

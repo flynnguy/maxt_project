@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+{% block title %}<title>Authorize Users on Tools</title>{% endblock %}
+
+{% block content %}
+<p>
+Note: This will only add authorizations to tools, to take it away, please use the admin.
+
+<form action="{% url 'authorize_user' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+
+</p>
+{% endblock content %}
