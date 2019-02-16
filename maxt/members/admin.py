@@ -8,9 +8,6 @@ admin.site.unregister(User)
 class MemberInline(admin.StackedInline):
     model = Member
 
-    def __str__(self):
-        return "Boo"
-
 
 @admin.register(User)
 class MemberAdmin(admin.ModelAdmin):

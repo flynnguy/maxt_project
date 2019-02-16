@@ -1,6 +1,21 @@
 import os
 from django.test import TestCase
+from django.contrib.auth.models import User
+
 from . templatetags.member_filters import active_page_class
+from . models import Member
+
+
+class ModelTests(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username='testuser',
+                                 email='testuser@example.com',
+                                 password='foobar')
+        self.member = Member.objects.create(user=self.user)
+
+    def test_member(self):
+        self.assertTrue(isinstance(self.member, Member))
+        self.assertEqual(self.member.__str__(), self.user.username)
 
 
 class FilterTests(TestCase):
@@ -27,6 +42,11 @@ class FilterTests(TestCase):
             {
                 'page': "/",
                 'request_url': "/tools/",
+                'expected': inactive_page,
+            },
+            {
+                'page': "/tools/",
+                'request_url': "/users/",
                 'expected': inactive_page,
             },
         )
