@@ -1,7 +1,5 @@
-Django>=2.1.6
-pytz==2018.5
+Django>=2.1.7
 coverage==4.5.2
-Django==2.1.7
 django-extensions==2.1.5
 django-werkzeug-debugger-runserver==0.3.1
 pytz==2018.5
