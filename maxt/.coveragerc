@@ -2,3 +2,4 @@
 omit = *maxt_venv*
        *migrations*
        manage.py
+       maxt/settings.py

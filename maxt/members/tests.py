@@ -1,12 +1,13 @@
-import os
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 from . templatetags.member_filters import active_page_class
 from . models import Member
 
 
 class ModelTests(TestCase):
+
     def setUp(self):
         self.user = User.objects.create_user(username='testuser',
                                  email='testuser@example.com',
@@ -16,6 +17,41 @@ class ModelTests(TestCase):
     def test_member(self):
         self.assertTrue(isinstance(self.member, Member))
         self.assertEqual(self.member.__str__(), self.user.username)
+
+
+class ViewsTest(TestCase):
+
+    def setUp(self):
+        self.user = User.objects.create_user(username='testuser',
+                                 email='testuser@example.com',
+                                 password='foobar')
+        self.member = Member.objects.create(user=self.user)
+
+        self.inactive_user = User.objects.create_user(username='bad_testuser',
+                                 email='bad_testuser@example.com',
+                                 is_active=False,
+                                 password='foobar')
+
+        self.inactive_member = Member.objects.create(user=self.inactive_user)
+
+    def test_index(self):
+        url = reverse("index")
+        resp = self.client.get(url)
+
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn('Maxt Member Management', str(resp.content))
+
+    def test_userinfo(self):
+        url = reverse("userinfo", args=["testuser"])
+        resp = self.client.get(url)
+
+        self.assertEqual(resp.status_code, 200)
+
+    def test_rfid(self):
+        url = reverse("rfid")
+        resp = self.client.get(url)
+
+        self.assertEqual(resp.status_code, 200)
 
 
 class FilterTests(TestCase):
