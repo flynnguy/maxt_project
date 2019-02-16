@@ -1,2 +1,4 @@
 [report]
 omit = *maxt_venv*
+       *migrations*
+       manage.py
