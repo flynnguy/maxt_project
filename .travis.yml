@@ -4,6 +4,8 @@ python:
 install:
   - pip install -r requirements.txt
 before_script: cd maxt/
-script: python manage.py test
+script:
+  - python manage.py test
+  - coverage run manage.py test
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+- codecov

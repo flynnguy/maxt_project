@@ -1,5 +1,6 @@
 Django>=2.1.7
 coverage==4.5.2
+codecov==2.0.15
 django-extensions==2.1.5
 django-werkzeug-debugger-runserver==0.3.1
 pytz==2018.5
