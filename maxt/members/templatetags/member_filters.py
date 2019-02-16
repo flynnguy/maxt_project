@@ -5,10 +5,11 @@ register = template.Library()
 
 @register.filter('active_page_class')
 def active_page_class(value, page):
-    if value == "/" and page == "/":
-        return mark_safe('class="active" ')
-    if page == "/": # because every page starts with "/"
+    if page == "/": # Special case "/" because every page starts with "/"
+        if value == "/":
+            return mark_safe('class="active"')
         return ""
+
     if value.startswith(page):
         return mark_safe('class="active" ')
     return ""
