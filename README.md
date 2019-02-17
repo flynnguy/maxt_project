@@ -1,4 +1,4 @@
-# Makerspace Tool Tool [![Build Status](https://travis-ci.org/flynnguy/maxt_project.svg?branch=master)](https://travis-ci.org/flynnguy/maxt_project)
+# Makerspace Tool Tool [![Build Status](https://travis-ci.org/flynnguy/maxt_project.svg?branch=master)](https://travis-ci.org/flynnguy/maxt_project) [![codecov](https://codecov.io/gh/flynnguy/maxt_project/branch/master/graph/badge.svg)](https://codecov.io/gh/flynnguy/maxt_project)
 
 ## Local Development
 1. Create a Python Virtual Environment
